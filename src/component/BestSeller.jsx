@@ -1,15 +1,11 @@
 import React from "react";
-import Books from "./Motivation";
+import Books from "./BestSellerBooks";
 
-const MotivationalBooks = () => {
-    const handleClick = ()=>{
-        
-    }
-
+const BestSeller = () => {
   return (
     <div>
       <h1 className="text-center font-extrabold text-3xl text-red-600 my-4">
-        Motivational Books
+        Best Seller Books
       </h1>
 
       <div className="flex flex-wrap justify-center">
@@ -24,7 +20,7 @@ const MotivationalBooks = () => {
               <h1 className="font-bold text-lg">{b.name}</h1>
               <h1 className="font-medium">{b.author}</h1>
               <h1 className="font-medium">₹{b.price}</h1>
-              <button className="bg-slate-400 w-28 rounded-3xl mt-4" onClick={handleClick}>
+              <button className="bg-slate-400 w-28 rounded-3xl mt-4">
                 Add To Cart
               </button>
             </div>
@@ -35,4 +31,4 @@ const MotivationalBooks = () => {
   );
 };
 
-export default MotivationalBooks;
+export default BestSeller;

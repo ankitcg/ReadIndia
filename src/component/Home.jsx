@@ -1,13 +1,16 @@
 import React from 'react'
 import Category from './Category'
+import MotivationalBooks from './MotivationalBooks'
+import BestSeller from './BestSeller'
+import InternationalBooks from './InternationalBooks'
 
 const Home = () => {
   return (
     <div>
         <Category/>
-        <div>
-
-        </div>
+        <MotivationalBooks/>
+        <BestSeller/>
+        <InternationalBooks/>
     </div>
   )
 }
