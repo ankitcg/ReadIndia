@@ -6,34 +6,39 @@ import alchemist from '../assets/alchemist.jpg';
 
 const Books =[
     {
-        img:`${habits}`,
+        id:1,
         name:"The 7 Habits of Highly Effective People",
         author:"Stephen Covey",
-        price:350
+        price:350,
+        img:`${habits}`,
     },
     {
-        img:`${think}`,
+        id:2,
         name:"Think and Grow Rich",
         author:"Napoleon Hill",
-        price:334
+        price:334,
+        img:`${think}`
     },
     {
-        img:`${power}`,
+        id:3,
         name:"The Power of Positive Thinking",
         author:"Norman Vincent Peale",
-        price:185
+        price:185,
+        img:`${power}`
     },
     {
-        img:`${art}`,
+        id:4,
         name:"The Subtle Art of Not Giving a F*ck",
         author:"Mark Manson",
-        price:241
+        price:241,
+        img:`${art}`
     },
     {
-        img:`${alchemist}`,
+        id:5,
         name:"The Alchemist ",
         author:"Paulo Coelho",
-        price:225
+        price:225,
+        img:`${alchemist}`
     }
 ]
 

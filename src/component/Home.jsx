@@ -4,11 +4,11 @@ import MotivationalBooks from './MotivationalBooks'
 import BestSeller from './BestSeller'
 import InternationalBooks from './InternationalBooks'
 
-const Home = () => {
+const Home = ({cart,setCart}) => {
   return (
     <div>
         <Category/>
-        <MotivationalBooks/>
+        <MotivationalBooks cart={cart} setCart={setCart}/>
         <BestSeller/>
         <InternationalBooks/>
     </div>
