@@ -2,11 +2,13 @@ const express = require('express');
 const app = express();
 require('dotenv').config();
 const connectToDb = require('./db');
-const userRouter = require('./route/user');
+const userRoute = require('./route/user');
 
 connectToDb();
 
-app.use('/user',userRouter)
+app.use(express.json());
+
+app.use('/api/user',userRoute)
 
 app.listen(process.env.PORT,(err)=>{
     if(err){
