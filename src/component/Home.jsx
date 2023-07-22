@@ -9,8 +9,8 @@ const Home = ({cart,setCart}) => {
     <div>
         <Category/>
         <MotivationalBooks cart={cart} setCart={setCart}/>
-        <BestSeller/>
-        <InternationalBooks/>
+        <BestSeller cart={cart} setCart={setCart}/>
+        <InternationalBooks cart={cart} setCart={setCart} />
     </div>
   )
 }

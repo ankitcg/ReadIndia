@@ -6,7 +6,7 @@ const MotivationalBooks = ({ cart, setCart }) => {
   const navigate = useNavigate();
   const handleClick = (book) => {
     console.log("Adding to cart:", book);
-    const bookInCart = cart.find((item) => item.id === book.id); // Use cart here
+    const bookInCart = cart.find((item) => item.id === book.id); 
 
     if (!bookInCart) {
       setCart([...cart, { ...book, quantity: 1 }]);
@@ -20,7 +20,7 @@ const MotivationalBooks = ({ cart, setCart }) => {
     }
   };
 
-  console.log("Cart State:", cart); // Use cart here
+  console.log("Cart State:", cart); 
 
   return (
     <div>

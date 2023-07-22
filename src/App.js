@@ -9,15 +9,21 @@ import InternationalBooks from "./component/InternationalBooks";
 import Cart from "./component/Cart";
 
 function App() {
-  const [cart, setCart] = useState([]); 
+  const [cart, setCart] = useState([]);
   console.log("cart state from app:", cart);
   return (
     <BrowserRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Home cart={cart} setCart={setCart} />} />
-        <Route path="/bestseller" element={<BestSeller />} />
-        <Route path="/international" element={<InternationalBooks />} />
+        <Route
+          path="/bestseller"
+          element={<BestSeller cart={cart} setCart={setCart} />}
+        />
+        <Route
+          path="/international"
+          element={<InternationalBooks cart={cart} setCart={setCart} />}
+        />
         <Route
           path="/motivational"
           element={<MotivationalBooks cart={cart} setCart={setCart} />}
